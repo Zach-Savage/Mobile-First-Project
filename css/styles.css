@@ -6,23 +6,25 @@ html {
 body {
 	width: 100%;
 	margin: 0 auto;
+	font-family: 'Montserrat', sans-serif;
 }
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+		color: #daa520;
+	}
 
 /** mobile layout styles **/
 
-@media (max-width: 320px) {
+/*@media (max-width: 320px) {*/
 
 	.body {
 		max-width: 320px;
 		margin: 0px auto;
 		box-sizing: border-box;
-		font-family: 'Montserrat', sans-serif;
-	}
-
-	.main-header, 
-	.profile,
-	.portfolio {
-	    font-family: 'Montserrat', sans-serif;
 	}
 
 	.main-header {
@@ -45,14 +47,21 @@ body {
 		border-radius: 2px;
 	}
 
+	.main-header a,
+	.main-header a:visited,
+	#back, #back:visited {
+		color: #3a3a3a;
+	}
+
+
 	.main-header ul {
 		padding-left: 0;
 		}
 
 	.main-header h2 {
 		color: #454545;
-		margin-top: 15px;
-		margin-bottom: 15px;
+		padding: 10px 0 10px;
+		margin: 15px 0 15px;
 		font-weight: 700;
 		font-size: 1.5em;
 	}
@@ -88,7 +97,7 @@ body {
 	}
 
 	.headings {
-		font-weight: 500;
+		font-weight: 600;
 	}
 
 	.portfolio img {
@@ -107,9 +116,8 @@ body {
 	}
 
 	.contact,
-	footer {
+	#mobile-footer {
 		color: #4d4d4d;
-		font-family: 'Montserrat', sans-serif;
 	}
 
 	.contact ul li {
@@ -121,11 +129,17 @@ body {
 		margin: auto;
 	}
 
-	.contact ul li a {
+	.contact ul li a,
+	.contact ul li a:visited {
 		text-decoration: none;
 		color: #4d4d4d;
 		font-size: 0.8em;
 		font-weight: bold;
+	}
+
+	.contact p {
+		padding-bottom: 20px;
+		line-height: 20px;
 	}
 
 	.contact h3 {
@@ -134,20 +148,130 @@ body {
 		text-transform: uppercase;
 	}
 
-	footer {
+	#mobile-footer {
 		width: 85%;
 		margin: auto;
 		border-top: 0.2px grey solid;
-		margin-top: 20px;
+		margin-top: 40px;
 	}
 
-	footer h4 {
+	#mobile-footer h4,
+	#mobile-footer a {
 		display: inline-block;
 		font-size: 0.8em;
 	}
 
-	#top {
-		float: right;
+	#back {
+		position: relative;	
 		text-transform: uppercase;
+		padding-left: 105px;
+	}
+
+@media (max-width: 767px) {
+	footer {
+		display: none;
+	}
+}
+
+
+/*********************
+
+ media of at least 768px 
+
+ ********************/
+
+
+
+@media (min-width: 768px) {
+
+	.main-header a:hover {
+		color: #daa520;
+	}
+
+	.main-header {
+		background-color: white;
+		padding-bottom: 30px;
+	}
+
+	.main-header h2 {
+		padding-top: 30px;
+		margin: 0;
+	}
+
+	.main-header li {
+		display: inline-block;
+		margin: 0;
+
+	}
+
+	.main-header ul {
+		margin: 0px;
+	}
+
+	.profile {
+		margin-top: 0;
+		text-align: left;
+		padding: 5px 20px 30px 20px;
+	}
+
+	.profile-img {
+		max-width: 40%;
+		float: right;
+		margin: auto;
+		position: relative;
+		top: 15px;
+		padding-left: 5px;
+	}
+
+	.clearfix::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+	.portfolio div {
+		max-width: 47%;
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	.contact {
+		padding-bottom: 40px;
+	}
+
+	.contact p {
+		padding: 0 18% 20px;
+	}
+
+	#mobile-footer {
+		display: none;
+	}
+
+	footer {
+		border-top: 1px solid rgba(169, 169, 169, .4);
+	}
+
+
+	footer li {
+		display: inline-block;
+		list-style: none;
+		float: left;
+		padding-top: 20px;
+		padding-bottom: 40px;
+		padding-left: 15px;
+	}
+
+	footer a,
+	footer a:visited {
+		color: #3a3a3a;
+	}
+
+	footer a:hover {
+		color: #daa520;
+	}
+
+	#student-name {
+		text-align: left;
+		padding-right: 45%;
 	}
 }
