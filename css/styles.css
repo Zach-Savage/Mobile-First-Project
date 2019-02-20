@@ -275,3 +275,99 @@ a:hover {
 		padding-right: 45%;
 	}
 }
+
+
+
+/*********************
+
+ media of at least 1024px 
+
+ ********************/
+
+
+@media (min-width: 1024px) {
+
+	.main-header h2,
+	.main-header li,
+	footer h2,
+	footer li {
+		text-align: center;
+		display: block;
+		padding-top: 40px;
+	}
+
+	.main-nav,
+	footer ul {
+		float: right;
+		padding-right: 50px
+	}
+
+	.main-header .name {
+		padding-left: 50px;
+		font-size: 2rem;
+	}
+
+	.name, 
+	.main-nav li,
+	footer h2,
+	footer li {
+		float: left;
+	}
+
+	.main-header,
+	footer {
+		overflow: hidden;
+		padding-left: 30px;
+	}
+
+	.main-nav li {
+		font-size: 1.3rem;
+		padding-right: 30px;
+	}
+
+	.profile {
+		font-size: 1.5em;
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+
+	.profile-img {
+		max-width: 35%;
+	}
+
+	.portfolio div {
+		width: 30%;
+		font-size: 1.5em;
+	}
+
+	#main-title {
+		font-size: 2em;
+	}
+
+	.contact {
+		font-size: 1.3em;
+	}
+
+	.contact p,
+	.contact ul li {
+		padding-left: 30%;
+		padding-right: 30%;
+		line-height: 35px;
+	}
+
+	footer {
+		font-size: 1.3em;
+	}
+
+	footer h2 {
+		padding: 33.5px 0 33.5px 50px;
+		font-weight: lighter;
+		margin: 0;
+		margin-top: 20px;
+	}
+
+	footer li {
+		text-transform: uppercase;
+	}
+
+}
