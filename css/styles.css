@@ -53,6 +53,11 @@ a:hover {
 		color: #3a3a3a;
 	}
 
+	.main-header a:hover,
+	 #back:hover{
+		color: #daa520;
+	}
+
 
 	.main-header ul {
 		padding-left: 0;
@@ -115,6 +120,18 @@ a:hover {
 		padding-right: 20px;
 	}
 
+
+
+	.skills {
+		text-align: center;
+		padding: 20px 20px;
+		background-color: #ededed;
+		color: #4d4d4d;
+		font-size: 0.8em;
+	}
+
+
+
 	.contact,
 	#mobile-footer {
 		color: #4d4d4d;
@@ -151,20 +168,24 @@ a:hover {
 	#mobile-footer {
 		width: 85%;
 		margin: auto;
+		display: block;
 		border-top: 0.2px grey solid;
 		margin-top: 40px;
+		float: right;
+		margin-right: 7.5%;
 	}
 
-	#mobile-footer h4,
-	#mobile-footer a {
-		display: inline-block;
+	#mobile-footer h4 {
+		float: left;
 		font-size: 0.8em;
 	}
 
 	#back {
+		font-size: 0.8em;
 		position: relative;	
 		text-transform: uppercase;
-		padding-left: 105px;
+		float:right;
+		padding-left: 100px;
 	}
 
 @media (max-width: 767px) {
@@ -184,24 +205,38 @@ a:hover {
 
 @media (min-width: 768px) {
 
+
+	.main-nav {
+		float: right;
+	}
+
+	.name,
+	.main-nav li {
+		float: left;
+	}
+
 	.main-header a:hover {
 		color: #daa520;
 	}
 
 	.main-header {
 		background-color: white;
-		padding-bottom: 30px;
+		padding-bottom: 10px;
+		overflow: hidden;
 	}
 
 	.main-header h2 {
-		padding-top: 30px;
+		padding-top: 20px;
 		margin: 0;
+		padding-left: 30px;
+		font-size: 1.2em;
 	}
 
 	.main-header li {
 		display: inline-block;
 		margin: 0;
-
+		padding-top: 30px;
+		padding-right: 20px;
 	}
 
 	.main-header ul {
@@ -251,14 +286,18 @@ a:hover {
 		border-top: 1px solid rgba(169, 169, 169, .4);
 	}
 
+	footer h2 {
+		float: left;
+		font-weight: lighter;
+		padding: 15px 40px;
+	}
 
 	footer li {
+		text-transform: uppercase;
 		display: inline-block;
 		list-style: none;
-		float: left;
-		padding-top: 20px;
-		padding-bottom: 40px;
-		padding-left: 15px;
+		float: right;
+		padding: 20px 30px 25px 0px;
 	}
 
 	footer a,
@@ -314,6 +353,10 @@ a:hover {
 		float: left;
 	}
 
+	.main-header h2 {
+		padding-top: 30px;
+	}
+
 	.main-header,
 	footer {
 		overflow: hidden;
@@ -342,6 +385,16 @@ a:hover {
 
 	#main-title {
 		font-size: 2em;
+	}
+
+	.skills {
+		font-size: 1em;
+		padding: 20px 15%;
+		line-height: 30px;
+	}
+
+	.skills p {
+		font-family: 'Exo', sans-serif;
 	}
 
 	.contact {
